@@ -9,6 +9,7 @@ public class Main {
 
   static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
     CountsBySoH counts = new CountsBySoH();
+    
     for(int capacity : presentCapacities){
       double sohPercentage = (capacity * 100.0) / 120.0;
 
@@ -29,9 +30,11 @@ public class Main {
     System.out.println("Counting batteries by SoH...\n");
     int[] presentCapacities = {115, 118, 80, 95, 91, 77};
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
+    
     assert(counts.healthy == 2);
     assert(counts.exchange == 3);
     assert(counts.failed == 1);
+    
     System.out.println("Done counting :)\n");
   }
 
