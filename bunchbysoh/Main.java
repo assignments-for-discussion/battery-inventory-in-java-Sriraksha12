@@ -27,7 +27,7 @@ public class Main {
     return counts;
   }
 
-  static void testBucketingByHealth() {
+  public static void main(String[] args)  {
     System.out.println("Counting batteries by SoH...\n");
 
     // Given test case
@@ -69,7 +69,7 @@ public class Main {
     System.out.println("Done counting :)\n");
   }
 
-  public static void main(String[] args) {
+  /*public static void main(String[] args) {
     testBucketingByHealth();
-  }
+  }*/
 }
