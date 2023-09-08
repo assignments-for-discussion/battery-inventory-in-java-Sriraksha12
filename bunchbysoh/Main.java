@@ -53,7 +53,7 @@ public class Main {
     assert(counts3.failed == 0);
 
 // test with all the batteries need exchange
-    int[] capacities4 = {64,60,62,65,63};
+    int[] capacities4 = {84,80,82,85,83};
     CountsBySoH counts4 = countBatteriesByHealth(capacities4);
     assert(counts4.healthy == 0);
     assert(counts4.exchange == 5);
