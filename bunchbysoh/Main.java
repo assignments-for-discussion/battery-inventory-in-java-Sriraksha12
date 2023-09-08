@@ -47,21 +47,21 @@ public class Main {
 
    // test with all the batteries healthy
     int[] capacities3 = {120,119,120,118,120};
-    CountsBySoH counts3 = countBatteriesByHealth(capacities2);
+    CountsBySoH counts3 = countBatteriesByHealth(capacities3);
     assert(counts3.healthy == 5);
     assert(counts3.exchange == 0);
     assert(counts3.failed == 0);
 
 // test with all the batteries need exchange
     int[] capacities4 = {64,60,62,65,63};
-    CountsBySoH counts4 = countBatteriesByHealth(capacities2);
+    CountsBySoH counts4 = countBatteriesByHealth(capacities4);
     assert(counts4.healthy == 0);
     assert(counts4.exchange == 5);
     assert(counts4.failed == 0);
 
 // test with all the batteries failed
     int[] capacities5 = {30,40,45,55,58};
-    CountsBySoH counts5 = countBatteriesByHealth(capacities2);
+    CountsBySoH counts5 = countBatteriesByHealth(capacities5);
     assert(counts5.healthy == 0);
     assert(counts5.exchange == 0);
     assert(counts5.failed == 5);
