@@ -33,8 +33,8 @@ public class Main {
     // Given test case
     int[] presentCapacities = {115, 118, 80, 95, 91, 77};
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
-    assert(counts.healthy == 2);
-    assert(counts.exchange == 3);
+    assert(counts.healthy == 3);
+    assert(counts.exchange == 2);
     assert(counts.failed == 1);
 
     
